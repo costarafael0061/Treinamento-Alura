@@ -12,7 +12,7 @@
 		<header> <!-- titulo Principal da Pagina  -->
 			<div class="caixa">
 				<h1>
-					<img src="logo.png">				
+					<img src="logo.png" alt="logo da Barbearia alura ">				
 				</h1>
 				<nav>
 					<ul>
@@ -25,23 +25,70 @@
 			</div>
 		</header>
 		<main>
-			<form>
-				<label for="Nomesobrenome">Nome e Sobrenome</label>
-				<input type="text" id="Nomesobrenome">
+			<form><!-- Informações de um Formulario  -->
+				<label for="Nomesobrenome">Nome e Sobrenome</label> <!--   -->
+				<input type="text" id="Nomesobrenome" class="input-padrao"  required >
 
 				<label for="email">Email</label>
-				<input type="Text" id="email" name="">
+				<input type="Text" id="email" name=""  class="input-padrao" required placeholder="seuemail@dominio.com">
 
 				<label for="telefone">telefone</label>
-				<input type="text" id="telefone" name="">
-				<input type="submit" value="Enviar Formulario">
+				<input type="text" id="telefone" name=""  class="input-padrao" required placeholder="(XX) xxxx-xxxx">
 
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="30" rows="10" id="mensagem"  class="input-padrao" required > </textarea > 
+				
+				<FIELDSET>
+					<legend  class="teste" id="teste" >Como Prefere o nosso Contato ? </legend>
+					<label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+
+					<label for="radio-telefone"> <input type="radio" name="contato" value ="telefone" id="radio-telefone">Telefone</label>
+
+					<label for="radio-whatsapp"> <input type="radio" name="contato" value ="whatsapp" id="radio-whatsapp">whatsapp</label>
+
+					
+				</FIELDSET>
+
+				<FIELDSET>
+					<legend>Qual horario prefere ser atendido </legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</FIELDSET>
+
+				<label class="checkbox"> <input type="checkbox" > Gostaria de Receber nossas novidades por email? </label>
+				<input type="submit" value="Enviar Formulario" class="enviar">
 			</form>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Dia </th>
+						<th>Horario</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda</td>
+						<td>08:00 as 20:00</td>
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>08:00 as 20:00</td>
+					</tr>
+					<tr>
+						<td>Sexta</td>
+						<td>08:00 as 20:00</td>
+					</tr>					
+				</tbody>
+			</table>
 			
 		</main>
 
 		 <footer>
-      		<img src="logo-branco.png">
+      		<img src="logo-branco.png" alt ="logo da Barbearia alura ">
       		<p class="Copyrigt"> &copy; Copyrigt barbearia alura 2020 </p>
       	</footer>
 	</body>
